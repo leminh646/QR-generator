@@ -21,4 +21,7 @@ def genereate_qr(url, filename="qrcode.png"):
 
 if __name__ == "__main__":
     url_input = input("Enter a URL: ")
-    genereate_qr(url_input)
+    output_file = input("Name your QR Code (Optional): ")
+    if output_file:
+        output_file += '.png'
+    genereate_qr(url_input, output_file)
